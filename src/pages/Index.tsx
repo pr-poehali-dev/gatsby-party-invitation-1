@@ -34,8 +34,12 @@ export default function Index() {
             </div>
 
             <div className="my-12 relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/20 relative">
-                <div className="absolute inset-0 gold-shimmer opacity-50"></div>
+              <div className="absolute -left-4 top-1/2 w-32 h-32 border-2 border-primary/30 transform -translate-y-1/2 rotate-45"></div>
+              <div className="absolute -right-4 top-1/2 w-32 h-32 border-2 border-primary/30 transform -translate-y-1/2 rotate-45"></div>
+              
+              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-8 border-primary shadow-2xl shadow-primary/40 relative">
+                <div className="absolute inset-0 gold-shimmer opacity-60"></div>
+                <div className="absolute inset-0 ring-4 ring-primary/20 ring-offset-8 ring-offset-background rounded-full"></div>
                 <img 
                   src="https://cdn.poehali.dev/files/1d7aa4df-f7d4-4921-a951-5e783f6a43b1.jpeg" 
                   alt="Именинница"
@@ -44,13 +48,20 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               <p className="text-xl md:text-2xl font-light text-foreground/80 italic">
                 Приглашаем вас разделить с нами
               </p>
               <p className="text-lg md:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto">
                 незабываемый вечер в стиле ревущих двадцатых — эпохи джаза, роскоши и безудержного веселья
               </p>
+              
+              <div className="max-w-3xl mx-auto pt-4">
+                <p className="text-base md:text-lg text-foreground/70 leading-relaxed italic">
+                  Погрузитесь в атмосферу 1920-х годов, когда стиль и элегантность были на пике моды. 
+                  Одевайтесь в лучшие наряды, ведь вечер обещает быть незабываемым!
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center justify-center gap-4 pt-6">
@@ -63,7 +74,40 @@ export default function Index() {
       </section>
 
       <section className="py-20 px-4 relative">
-        <div className="container mx-auto max-w-4xl">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <div className="max-w-3xl mx-auto mb-16 relative">
+              <div className="absolute -left-8 top-0 w-1 h-full bg-gradient-to-b from-transparent via-primary/50 to-transparent hidden md:block"></div>
+              <div className="absolute -right-8 top-0 w-1 h-full bg-gradient-to-b from-transparent via-primary/50 to-transparent hidden md:block"></div>
+              
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"></div>
+                <Icon name="Book" className="text-primary" size={32} />
+                <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary"></div>
+              </div>
+              
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary mb-6">
+                В стиле Великого Гэтсби
+              </h2>
+              
+              <div className="space-y-4 text-foreground/75 leading-relaxed">
+                <p className="text-base md:text-lg italic">
+                  Помните вечеринки Джея Гэтсби? Те самые, где шампанское лилось рекой, оркестр играл джаз до рассвета, 
+                  а гости блистали в роскошных нарядах с пайетками и перьями.
+                </p>
+                <p className="text-base md:text-lg">
+                  Эпоха арт-деко, золотые акценты, геометрические узоры и атмосфера безудержного праздника — 
+                  именно такой вечер мы приготовили для вас!
+                </p>
+                <p className="text-base md:text-lg font-semibold text-primary">
+                  Давайте вместе отпразднуем эту важную веху и создадим воспоминания, 
+                  которые останутся с нами навсегда!
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"></div>
@@ -122,7 +166,8 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-card/60 backdrop-blur-sm border-primary/30 p-8 shadow-xl">
+            <Card className="bg-card/60 backdrop-blur-sm border-2 border-primary/40 p-8 shadow-2xl shadow-primary/20 relative">
+              <div className="absolute inset-0 border-8 border-transparent bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
               <div className="text-center mb-6">
                 <Icon name="Sparkles" className="text-primary mx-auto mb-4" size={48} />
                 <h3 className="font-playfair text-3xl font-bold text-foreground mb-2">Для дам</h3>
@@ -151,7 +196,8 @@ export default function Index() {
               </ul>
             </Card>
 
-            <Card className="bg-card/60 backdrop-blur-sm border-primary/30 p-8 shadow-xl">
+            <Card className="bg-card/60 backdrop-blur-sm border-2 border-primary/40 p-8 shadow-2xl shadow-primary/20 relative">
+              <div className="absolute inset-0 border-8 border-transparent bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
               <div className="text-center mb-6">
                 <Icon name="Crown" className="text-primary mx-auto mb-4" size={48} />
                 <h3 className="font-playfair text-3xl font-bold text-foreground mb-2">Для джентльменов</h3>
@@ -196,8 +242,9 @@ export default function Index() {
             </h2>
           </div>
 
-          <Card className="bg-card/60 backdrop-blur-sm border-primary/30 p-8 md:p-12 shadow-xl">
-            <div className="grid sm:grid-cols-2 gap-6">
+          <Card className="bg-card/60 backdrop-blur-sm border-2 border-primary/40 p-8 md:p-12 shadow-2xl shadow-primary/20 relative">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+            <div className="grid sm:grid-cols-2 gap-6 relative z-10">
               <div className="flex gap-4 items-start">
                 <Icon name="Music2" className="text-primary flex-shrink-0 mt-1" size={32} />
                 <div>
@@ -241,6 +288,7 @@ export default function Index() {
       </section>
 
       <section className="py-20 px-4 relative bg-secondary/30">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-4 mb-6">
@@ -256,7 +304,11 @@ export default function Index() {
             </p>
           </div>
 
-          <Card className="bg-card/60 backdrop-blur-sm border-primary/30 p-8 md:p-10 shadow-xl">
+          <Card className="bg-card/60 backdrop-blur-sm border-2 border-primary/40 p-8 md:p-10 shadow-2xl shadow-primary/30 relative">
+            <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-primary/50"></div>
+            <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-primary/50"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-primary/50"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-primary/50"></div>
             <div className="text-center space-y-6">
               <p className="text-lg text-foreground/80">
                 Нажмите кнопку ниже, чтобы подтвердить участие через WhatsApp
